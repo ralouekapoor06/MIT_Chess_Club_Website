@@ -21,10 +21,10 @@ app.use(session({secret: "whydowefallsecretsymbole"}));
 // SQL Database connectivity;
 const mysql = require("mysql");
 const db_config = {
-  host: "",
-  user:"",
-  password: "",
-  database: ""
+  host: "sql12.freemysqlhosting.net",
+  user:"sql12328808",
+  password: "zbUZyizrT1",
+  database: "sql12328808"
 };
 var db;
 function handleDisconnect() {
@@ -56,6 +56,10 @@ handleDisconnect(); // call the handleDisconnect function once
 app.get('/', function(req, res){
     res.render('home');
  });
+
+ app.get('/news', function(req, res){
+  res.render('news');
+});
 
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`)
