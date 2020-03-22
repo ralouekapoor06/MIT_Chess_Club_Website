@@ -56,11 +56,7 @@ handleDisconnect(); // call the handleDisconnect function once
 app.get('/', function(req, res){
     res.render('home');
  });
-
- app.get('/news', function(req, res){
-  res.render('news');
-});
-
+ 
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`)
 });
