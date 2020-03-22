@@ -1,19 +1,26 @@
 {
-    "name": "mitchessclub",
-    "version": "1.0.0",
-    "description": "node app ",
-    "main": "app.js",
-    "scripts": {
+  "name": "mitchessclub",
+  "version": "1.0.0",
+  "description": "MIT Chess Club Official Website",
+  "main": "app.js",
+  "engines": {
+    "node": "10.16.0"
+  },
+  "scripts": {
     "start": "nodemon app.js"
   },
-    "repository": {
+  "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/ralouekapoor06/MIT_Chess_Club_Website.git"
   },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-    "url": ""
+  "author": "ralouekapoor06",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   },
-    "homepage": ""
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "pingmydyno": "^1.5.1",
+    "slackbots": "^1.2.0"
   }
+}
