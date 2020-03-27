@@ -22,9 +22,9 @@ app.use(session({secret: "whydowefallsecretsymbole"}));
 const mysql = require("mysql");
 const db_config = {
   host: "sql12.freemysqlhosting.net",
-  user:"sql12328808",
-  password: "zbUZyizrT1",
-  database: "sql12328808"
+  user:"sql12329649",
+  password: "MYqlqD4qIs",
+  database: "sql12329649"
 };
 var db;
 function handleDisconnect() {
