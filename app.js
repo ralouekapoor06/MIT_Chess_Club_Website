@@ -2,7 +2,7 @@ const express = require("express"); // express refers to the express framework
 const app = express();
 console.log(typeof express)
 //const bcrypt = require("bcrypt");
-//const saltRounds = 10;
+//const saltRounds is 10;
 
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
