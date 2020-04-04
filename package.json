@@ -11,7 +11,10 @@
     "lodash": "^4.17.15",
     "mysql": "^2.18.1"
   },
-  "devDependencies": {"ejs":"3.0.2"},
+  "devDependencies": {
+  	"ejs":"3.0.2",
+  	"loader":"2.1.1"
+  },
   "scripts": {
   	"start":"node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
