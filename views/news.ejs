@@ -13,6 +13,19 @@
             <th>
                 Description
             </th>
+            <th>
+                URL
+            </th>
+            <th>
+                Url to image
+            </th>
+            <th>
+                Published At
+            </th>
+            <th>
+                Content
+            </th>
+
         </tr>
         <% for(var i=0; i < data.length; i++) { %>
            <tr>
@@ -20,6 +33,10 @@
              <td><%= data[i]['author'] %></td>
              <td><%= data[i]['title'] %></td>
              <td><%= data[i]['description'] %></td>
+             <td><%= data[i]['url'] %></td>
+             <td><img width="300" height="300" src= '<%= data[i]['urlToImage'] %>'/></td>
+             <td><%= data[i]['publishedAt'] %></td>
+             <td><%= data[i]['content'] %></td>
            </tr>
         <% } %>
         </table>
