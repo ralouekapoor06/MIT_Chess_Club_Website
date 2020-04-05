@@ -1,6 +1,10 @@
 const express = require("express"); // express refers to the express framework
 const app = express();
+const NewsAPI = require('newsapi');
+const newsapi = new NewsAPI('51e5a240dc9d4edb930cefab3548dc7c');
+
 console.log(typeof express)
+
 //const bcrypt = require("bcrypt");
 //const saltRounds is 10;
 
@@ -56,6 +60,24 @@ handleDisconnect(); // call the handleDisconnect function once
 app.get('/', function(req, res){
     res.render('home');
  });
+
+app.get('/news', function(req, res){
+
+  newsapi.v2.everything({
+    q: 'chess',
+    from: '2020-03-06',
+    to: '2020-04-05',
+    language: 'en',
+    sortBy: 'relevancy',
+    page: 3
+  }).then(response => {
+    console.log(response);
+    response1 = response['articles']
+    //console.log(response1[0]['source'])
+    res.render('news',{data:response1});
+  });
+
+});
  
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`)

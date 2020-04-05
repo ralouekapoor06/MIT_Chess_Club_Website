@@ -1,0 +1,26 @@
+<html>
+    <table border=1>
+        <tr>
+            <th>
+                Source
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+        <% for(var i=0; i < data.length; i++) { %>
+           <tr>
+             <td><%= data[i]['source']['name'] %></td>
+             <td><%= data[i]['author'] %></td>
+             <td><%= data[i]['title'] %></td>
+             <td><%= data[i]['description'] %></td>
+           </tr>
+        <% } %>
+        </table>
+</html>
