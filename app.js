@@ -65,8 +65,8 @@ app.get('/news', function(req, res){
 
   newsapi.v2.everything({
     q: 'chess',
-    from: '2020-03-06',
-    to: '2020-04-05',
+    from: '2020-04-06',
+    to: '2020-04-15',
     language: 'en',
     sortBy: 'relevancy',
     page: 3
