@@ -4,6 +4,7 @@
   "description": "Official Chess Club of MIT Manipal",
   "main": "app.js",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "connect-redis": "^4.0.3",

@@ -63,10 +63,24 @@ app.get('/', function(req, res){
 
 app.get('/news', function(req, res){
 
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+today = yyyy + '-' + mm + '-' + dd;
+
+var d = new Date();
+d.setDate(d.getDate()-5);
+var dd = String(d.getDate()).padStart(2, '0');
+var mm = String(d.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = d.getFullYear();
+d = yyyy + '-' + mm + '-' + dd;
+var startdate = d
+
   newsapi.v2.everything({
-    q: 'chess',
-    from: '2020-04-06',
-    to: '2020-04-15',
+    q: 'chess online',
+    from: today,
+    to: startdate,
     language: 'en',
     sortBy: 'relevancy',
     page: 3
@@ -81,4 +95,11 @@ app.get('/news', function(req, res){
  
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`)
+});
+
+
+
+
+app.get('/store', function(req, res){
+  res.render('store');
 });

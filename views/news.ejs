@@ -1,12 +1,130 @@
 <html style="background-image: url('assets/img/back.jpg')">
     
-    <head>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>             
-      <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet"> 
-    </head>
+<head>
+    <title>chessclub.mit | Official chess club of MIT Manipal</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/material-kit.css"  />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="assets/js/jquery-2.1.4.js"></script>     
+  </head>
 
+<body  style="font-family: 'Montserrat', sans-serif;background-color: white">
+        <div class="loader-wrapper">
+                <span class="loader"><span class="loader-inner"></span></span>
+              </div>
+        
+          <nav  class="navbar absolute-top navbar-expand-lg"  >
+            <div class="container">
+              <div class="navbar-translate">
+                <a style="color: #FB9821" class="navbar-brand" href="http://localhost:3000">
+                   <img src="assets/img/logo.jpg" width="40px" height="40px">
+                </a>
+                <span>
+                  <a href="#" style="color: #FB9821" >
+                    #MakingtheRightMoves
+                  </a>
+                </span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  
+                  
+                  <li class="nav-item">
+                    <a href="/news" class="nav-link" style="color:black ">
+                      <i class="material-icons">live_tv</i> News
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" style="color: black">
+                      <i class="material-icons">store_front</i> Store
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" style="color: black">
+                      <i class="material-icons">people</i> Members
+                    </a>
+                  </li>
+                  
+                  
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div  class="container">
+                <div class="col-md-12 ml-auto mr-auto" >
+                        <div style="color: #FB9821" class="brand text-left">
+                          <h1 style="font-family: 'Gotu', sans-serif;">CHESS NEWS</h1>
+                        </div>
+                      </div>
+
+                      <table>
+                            <% for(var i=0; i < data.length; i=i+3) { %>
+                            <tr>
+                                <td style="padding-right: 80">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                                <div class="card" style="height: 25rem; width: 20rem;">
+                                                    <img class="card-img-top" src='<%= data[i]['urlToImage'] %>' rel="nofollow" alt="Card image cap" height="70%">
+                                                    <div class="card-body">
+                                                      <p style="color: black;text-align: center" class="card-text"><%= data[i]['description'] %></br><a href="<%= data[i]['url'] %>" style="color:#FB9821">Know more</a></p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                </td>
+                                <% i = i+1%>
+                                <td style="padding-right: 80">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                    <div class="card" style="height: 25rem; width: 20rem;">
+                                                        <img class="card-img-top" src='<%= data[i]['urlToImage'] %>' rel="nofollow" alt="Card image cap" height="70%">
+                                                        <div class="card-body">
+                                                          <p style="color: black;text-align: center" class="card-text"><%= data[i]['description'] %></br><a href="<%= data[i]['url'] %>" style="color:#FB9821">Know more</a></p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                    </td>
+                                    <% i = i+1%>
+                                    <td>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                        <div class="card" style="height: 25rem; width: 20rem;">
+                                                            <img class="card-img-top" src='<%= data[i]['urlToImage'] %>' rel="nofollow" alt="Card image cap" height="70%">
+                                                            <div class="card-body">
+                                                              <p style="color: black;text-align: center" class="card-text"><%= data[i]['description'] %></br><a href="<%= data[i]['url'] %>" style="color:#FB9821">Know more</a></p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                        </td>
+                                </tr> 
+                                <% } %>
+                      </table>                      
+
+        </div>
+
+
+</body>
+
+
+
+
+<!--
     <body>
                 <div class="col-md-12 ml-auto mr-auto" >
                     <div style="color: #FB9821" class="brand text-left">
@@ -76,4 +194,54 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
+-->
+    <footer class="footer footer-default" style="color: black">
+        <div class="container">
+          <nav class="float-left">
+            <ul>
+              <li>
+                
+                  FOLLOW US
+                
+              </li>
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              &emsp;
+              <li>
+                <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
+              </li>
+              <li>
+                <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
+              </li>
+              <li>
+                <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with <i class="material-icons">favorite</i> by
+            <a style="color: #FB9821" href="http://localhost:3000" target="blank">MIT CHESS CLUB</a>
+          </div>
+        </div>
+      </footer>
+
+
 </html>

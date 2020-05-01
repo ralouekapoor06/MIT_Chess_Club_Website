@@ -1,0 +1,353 @@
+<html >
+<head>
+  <title>chessclub.mit | Official chess club of MIT Manipal</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="assets/css/material-kit.css"  />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <script src="assets/js/jquery-2.1.4.js"></script>
+  <style>
+      #chess-board-image{
+          float: left;
+          width: 100%;
+          height:100%;
+      }
+      * {box-sizing: border-box}
+body {
+    font-family: Verdana, sans-serif; margin:0;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+#purchase-form{
+    width:57%;
+    margin-left:25%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #FFFFFF;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+/* The dots/bullets/indicators */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; 
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+     
+      
+  </style>           
+</head>
+<body style="font-family: 'Montserrat', sans-serif;background-color: white">
+
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+<nav  class="navbar absolute-top navbar-expand-lg"  >
+  <div class="container">
+    <div class="navbar-translate">
+      <a style="color: #FB9821" class="navbar-brand" href="#">
+         <img src="assets/img/logo.jpg" width="40px" height="40px">
+      </a>
+      <span>
+        <a href="/" style="color: #FB9821">
+          #MakingtheRightMoves
+        </a>
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a href="/news" class="nav-link" style="color:black ">
+            <i class="material-icons">live_tv</i> News
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" style="color: black">
+            <i class="material-icons">store_front</i> Store
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" style="color: black">
+            <i class="material-icons">people</i> Members
+          </a>
+        </li>
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+
+<div class="row" style="margin-left: 39%;  font-weight: 100;">
+  <p style="font-size: 32px;"> The Store</p><br><br>
+</div><br><br>
+<div class=row id="pics">
+    <div class="col-md-6" style="right: 5%">
+        <div class="slideshow-container" style="width: 50%;">
+            
+            <div class="mySlides fade">
+              <img src="https://cdn3.volusion.com/artgw.hyvvw/v/vspfiles/photos/CB05554-4.jpg?v-cache=1565171767" style="width:100%; height: 100%;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41tZaCaIYpL._AC_SY400_.jpg" style="width:100%; height: 100%;">
+             
+            </div>
+
+            
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              
+              
+            </div>
+            
+    </div>
+    <div class="col-md-6" style="right: 8%">
+      <div class="card" id="information-card">
+        <div class="card-header">
+          <h4 >Chess Boards and Pieces</h4>
+          <p class="category" style="color: #FB9821;  font-size: 16px;">₹500.00</p>
+        </div>
+        <div class="card-body" style="font-size: 16px;">
+            <br>
+            <p>
+                Whats better than playing chess on a physical board ? Buy the tournament sized chess board from us today. Here are the features of it -
+            </p>
+          <ul>
+            
+            <li>Available in green color</li>
+            <li>Available in 45gm and 65gm pieces</li>
+            <li>16 X 16 inches</li>
+          </ul>
+          <button style="color: white;background-color: #FB9821" type="button" class="btn btn-default btn-lg disabled">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    
+</div>
+<div class="card" id="purchase-form" style="right: 5%">
+    
+    <div class="section text-center">
+        <h3 style="color: #FB9821">Order Checkout</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="left: 48%">
+
+                <div class="card-header card-header-icon card-header-danger" >
+                  <div class="card-title">
+                    <span><b>Fill in the form and our team will get back to you shortly</b></span>
+                  </div>
+                   
+                </div>
+                <div class="card-body" >
+                    <form>
+                        <div class="row">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <input type="text" class="form-control" placeholder="Whatsapp Number">
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <input type="text" class="form-control" placeholder="Email">
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <input type="text" class="form-control" placeholder="Quantity">
+                          </div>
+                          <br/>
+                          <div class="row">
+                          <button style="background-color: #FB9821" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                      
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+
+<br>
+<br>
+
+<footer class="footer footer-default" style="color: black">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="#">
+              FOLLOW US
+            </a>
+          </li>
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          &emsp;
+          <li>
+            <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
+          </li>
+          <li>
+            <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, made with <i class="material-icons">favorite</i> by
+        <a style="color: #FB9821" href="https://www.creative-tim.com/" target="blank">MIT CHESS CLUB</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#purchase-form").hide();
+      $("button").click(function(){
+        $("#purchase-form").show();
+        $("#pics").hide();
+        $("#information-card").hide();
+      });
+    });
+    </script>
+</body>
