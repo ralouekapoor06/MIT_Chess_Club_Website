@@ -20,7 +20,7 @@
     "redis": "^2.8.0",
     "sequelize": "^5.19.4",
     "session": "^0.1.0",
-    "newsapi":"^3.5.2"
+    "newsapi":"^2.4.0"
   },
   "devDependencies": {},
   "scripts": {
