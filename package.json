@@ -19,7 +19,8 @@
     "passport-local": "^1.0.0",
     "redis": "^2.8.0",
     "sequelize": "^5.19.4",
-    "session": "^0.1.0"
+    "session": "^0.1.0",
+    "newsapi":"^3.5.2"
   },
   "devDependencies": {},
   "scripts": {
