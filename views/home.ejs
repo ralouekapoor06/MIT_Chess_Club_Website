@@ -1,95 +1,29 @@
-<html style="overflow-x: hidden;" >
+<html style="overflow-x: hidden;font-family: 'Oxygen', sans-serif;" >
 <head>
   <title>chessclub.mit | Official chess club of MIT Manipal</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link rel = "icon" type = "image/png" href = "assets/img/logo.jpg">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/material-kit.css"  />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <script src="assets/js/jquery-2.1.4.js"></script>
-             
+  <script src="assets/js/jquery-2.1.4.js"></script>     
+  <style>
+      .center {
+    margin: auto;
+  }
+  </style>
 </head>
 
-<style>
-      body {
-      margin: 0;
-      padding: 0;
-      width:100vw;
-      height: 100vh;
-      background-color: #eee;
-    }
-    .content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width:100%;
-      height:100%;
-    }
-    .loader-wrapper {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #242f3f;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .loader {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      position: relative;
-      border: 4px solid #Fff;
-      animation: loader 2s infinite ease;
-    }
-    .loader-inner {
-      vertical-align: top;
-      display: inline-block;
-      width: 100%;
-      background-color: #fff;
-      animation: loader-inner 2s infinite ease-in;
-    }
-    @keyframes loader {
-      0% { transform: rotate(0deg);}
-      25% { transform: rotate(180deg);}
-      50% { transform: rotate(180deg);}
-      75% { transform: rotate(360deg);}
-      100% { transform: rotate(360deg);}
-    }
-    @keyframes loader-inner {
-      0% { height: 0%;}
-      25% { height: 0%;}
-      50% { height: 100%;}
-      75% { height: 100%;}
-      100% { height: 0%;}
-    }
-
-    .center {
-  margin: auto;
-}
-</style>
-
-
-<body style="font-family: 'Montserrat', sans-serif;background-color: white; font-weight: 600">
-
-
-      <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-      </div>
-
-
-      
+<body style="background-color: white; font-weight: 600;overflow-x: hidden;">  
   <nav  class="navbar absolute-top navbar-expand-lg"  >
     <div class="container">
       <div class="navbar-translate">
         <a style="color: #FB9821" class="navbar-brand" href="http://localhost:3000">
-           <img src="assets/img/logo.jpg" width="40px" height="40px">
+          <img src="assets/img/logo.jpg" width="40px" height="40px">
         </a>
         <span>
           <a href="#" style="color: #FB9821" >
@@ -103,87 +37,85 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          
-          <li class="nav-item">
-            <a href="/store" class="nav-link" style="color: black">
-              <i class="material-icons">store_front</i> Store
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" style="color: black">
-              <i class="material-icons">people</i> Members
-            </a>
-          </li>        
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="/store" class="nav-link" style="color: black">
+          <i class="material-icons">store_front</i> Store
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" style="color: black">
+          <i class="material-icons">people</i> Members
+        </a>
+      </li>        
+    </ul>
+    </div>
     </div>
   </nav>
 
 
 
-  <div  class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/bgg.jpg')">
+  <div  class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/home_background.jpg')">
     <div  class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto" >
           <div style="color: #FB9821" class="brand text-left">
-            <h1 style="font-family: 'Gotu', sans-serif;">MIT CHESS CLUB</h1>
+            <h1><b>MIT CHESS CLUB</b></h1>
           </div>
         </div>
         <iframe class="col-md-4 ml-auto mr-auto" src="https://lichess.org/tv/frame?theme=metal&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
-        </div>
+      </div>
     </div>
   </div>
 
+
+
   <div class="main main-raised" style="background-color:white">
     <div class="container">
-
       <div class="section text-center">
-        <h3 style="color: #FB9821" >Club Events</h3>
+        <h1 style="color: #FB9821;font-family: 'Righteous', cursive;" >Club Events</h1>
       </div>
-
       <div class="row">
         <div class="center">
-      <div class="col-md-4">
-      <div class="card" style="height: 25rem; width: 20rem;">
-        <img class="card-img-top" src="assets/img/trophy.png" rel="nofollow" alt="Card image cap" height="70%">
-        <div class="card-body">
-          <p style="color: black;text-align: center" class="card-text">After a success in 2019, MIT CHESS CHAMPIONSHIP is back in 2020. It's bigger and better than last time.</br><a href="" style="color:#FB9821"> Register here</a></p>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="center">
-      <div class="col-md-4">
-        
-      <div class="card" style="height: 25rem; width: 20rem;">
-          <img class="card-img-top" src="/assets/img/lichess.png" rel="nofollow" alt="Card image cap" height="70%">
-          <div class="card-body">
-            <p style="color: black;text-align: center" class="card-text">Monthly Online Blitz Championship is one of the most exciting competitions that we hold.</br><a href="" style="color:#FB9821"> Register here</a></p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="center">
-      <div class="col-md-4">
-        
-          <div class="card" style="height: 25rem; width: 20rem;">
-              <img class="card-img-top" src="assets/img/seminar.png" rel="nofollow" alt="Card image cap" height="70%">
+          <div class="col-md-4">
+            <div class="card" style="height: 25rem; width: 20rem;">
+              <img class="card-img-top" src="assets/img/trophy.png" rel="nofollow" alt="Card image cap" height="70%">
               <div class="card-body">
-                <p style="color: black;text-align: center" class="card-text">Free seminars every month to level up your chess game.</br><a href="" style="color:#FB9821"> Register here</a></p>
+              <p style="color: black;text-align: center" class="card-text">After a success in 2019, MIT CHESS CHAMPIONSHIP is back in 2020. It's bigger and better than last time.</br><a href="" style="color:#FB9821"> Register here</a></p>
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
+        <div class="center">
+          <div class="col-md-4">
+            <div class="card" style="height: 25rem; width: 20rem;">
+              <img class="card-img-top" src="/assets/img/lichess.png" rel="nofollow" alt="Card image cap" height="70%">
+              <div class="card-body">
+              <p style="color: black;text-align: center" class="card-text">Monthly Online Blitz Championship is one of the most exciting competitions that we hold.</br><a href="" style="color:#FB9821"> Register here</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <div class="col-md-4">
+            <div class="card" style="height: 25rem; width: 20rem;">
+              <img class="card-img-top" src="assets/img/seminar.png" rel="nofollow" alt="Card image cap" height="70%">
+              <div class="card-body">
+              <p style="color: black;text-align: center" class="card-text">Free seminars every month to level up your chess game.</br><a href="" style="color:#FB9821"> Register here</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       
-<div >
-      <div class="section text-center">
-        <h3 style="color: #FB9821" >Our Motto</h3>
-      </div>
+      <div>
+        <div class="section text-center">
+        <h1 style="color: #FB9821;font-family: 'Righteous', cursive;" >Our Motto</h1>
+        </div>
 
       <div style="text-align: center;color: black">
         <div style="padding-bottom: 1%">Our motto is to help as many chess players as possible in improving their game. </div>
@@ -194,187 +126,146 @@
           #MakingTheRightMoves Since 2019
         </div>
       </div>
-  </div>
-
-  <div class="section text-center">
-    <h3 style="color: #FB9821" >About Us</h3>
-  </div>
-
-  <div style="text-align: center;color: black">
-    <div style="padding-bottom: 1%">We are the official chess club of MIT Manipal </div>
-    <div style="padding-bottom: 1%">
-      We organize various events and teach students chess
-    </div>
-    <div style="padding-bottom: 2%">
-      #MakingTheRightMoves Since 2019
-    </div>
-  </div>
+      </div>
 
       <div class="section text-center">
-          <h3 style="color: #FB9821" >Want to become a member ?</h3>
-        </div>
+        <h1 style="color: #FB9821;font-family: 'Righteous', cursive;" >About Us</h1>
+      </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-icon card-header-danger  ">
-                      <div class="card-title">
-                        <span><b> Fill the form below and we shall reach out to you shortly </b></span>
-                      </div>
-                       
+      <div style="text-align: center;color: black">
+        <div style="padding-bottom: 1%">We are the official chess club of MIT Manipal </div>
+        <div style="padding-bottom: 1%">
+          We organize various events and teach students chess
+        </div>
+        <div style="padding-bottom: 2%">
+          #MakingTheRightMoves Since 2019
+        </div>
+      </div>
+
+      <div class="section text-center">
+        <h1 style="color: #FB9821;font-family: 'Righteous', cursive;" >Want to become a member ?</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon card-header-danger  ">
+              <div class="card-title">
+                <span>
+                  <b>
+                     Fill the form below and we shall reach out to you shortly 
+                  </b>
+                </span>
+              </div>   
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Full name">
+                  </div>
+                  <div class="col">
+                      <input type="text" class="form-control" placeholder="Reg.no">
                     </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="row">
-                              <div class="col">
-                                <input type="text" class="form-control" placeholder="Full name">
-                              </div>
-                              <div class="col">
-                                  <input type="text" class="form-control" placeholder="Reg.no">
-                                </div>
-                              <div class="col">
-                                <input type="text" class="form-control" placeholder="Whatsapp">
-                              </div>
-                              <button style="background-color: #FB9821" type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                          </form>
-                          
-                    </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Whatsapp">
+                  </div>
+                  <button style="background-color: #FB9821" type="submit" class="btn btn-primary">Submit</button>
                 </div>
+              </form>    
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="section text-center">
-            <h3 style="color: #FB9821" >Check out these</h3>
-          </div>
-
-          
-          <div class="row">
-            <div class="center">
-            <div class="col-md-4">
+      <div class="section text-center">
+        <h1 style="color: #FB9821;font-family: 'Righteous', cursive;" >Check out these</h1>
+      </div>
+ 
+      <div class="row">
+        <div class="center">
+          <div class="col-md-4">
             <div class="card" style="height: 25rem; width: 20rem;">
               <img class="card-img-top" src="assets/img/storee.png" rel="nofollow" alt="Card image cap" height="70%">
               <div class="card-body">
                 <p style="color: black;text-align: center" class="card-text">Online Store for your chess needs. Buy at a much cheaper price than any other place</br><a href="" style="color:#FB9821"> Know More</a></p>
               </div>
             </div>
-            </div>
           </div>
-          <div class="center">
-                <div class="col-md-4">
-                  <div class="card" style="height: 25rem; width: 20rem;">
-                    <img class="card-img-top" src="assets/img/members.png" rel="nofollow" alt="Card image cap" height="70%">
-                    <div class="card-body">
-                      <p style="color: black;text-align: center" class="card-text">Know about the members of the club</br><a href="" style="color:#FB9821"> Know more</a></p>
-                    </div>
-                  </div>
-                </div>
+        </div>
+        <div class="center">
+          <div class="col-md-4">
+            <div class="card" style="height: 25rem; width: 20rem;">
+              <img class="card-img-top" src="assets/img/members.png" rel="nofollow" alt="Card image cap" height="70%">
+              <div class="card-body">
+                <p style="color: black;text-align: center" class="card-text">Know about the members of the club</br><a href="" style="color:#FB9821"> Know more</a></p>
               </div>
             </div>
-
-
-
-
-
-            <div class="section text-center">
-              <h3 style="color: #FB9821">Let's get Inspired</h3>
-            </div>
-
-            
-          
-
-          <div class="section text-center">
-            <h3 style="color: #FB9821">Conatct Us</h3>
           </div>
+        </div>      
+      </div>
 
-          <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header card-header-icon card-header-danger">
-                      <div class="card-title">
-                        <span><b>Message down or Reach out to us @chessclubmit@gmail.com</b></span>
-                      </div>
-                       
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="row">
-                                <input type="text" class="form-control" placeholder="First Name">
-                              </div>
-                              <br/>
-                              <div class="row">
-                                <input type="text" class="form-control" placeholder="Last Name">
-                              </div>
-                              <br/>
-                              <div class="row">
-                                <input type="text" class="form-control" placeholder="Email">
-                              </div>
-                              <br/>
-                              <div class="row">
-                                <input type="text" class="form-control" placeholder="Message">
-                              </div>
-                              <br/>
-                              <div class="row">
-                              <button style="background-color: #FB9821" type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                          </form>
-                          
-                    </div>
+
+      <div class="section text-center">
+        <h1 style="color: #FB9821;font-family: 'Righteous', cursive;">Contact Us</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header card-header-icon card-header-danger">
+              <div class="card-title">
+                <span><b>Message down or Reach out to us @chessclubmit@gmail.com</b></span>
+              </div>    
+            </div>
+            <div class="card-body">
+              <form method="post" action="/contact">
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="First Name">
                 </div>
-            </div>
-
-            <div class="center">
-            <div class="col-md-6">
-              <img width="400" height="400" src="assets/img/contact.png">
+                <br/>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <br/>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <br/>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Message">
+                </div>
+                <br/>
+                <div class="row">
+                <button style="background-color: #FB9821" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>    
             </div>
           </div>
-          </div>
+        </div>
+        <div class="center">
+        <div class="col-md-6">
+          <img width="400" height="400" src="assets/img/contact.png">
+        </div>
+        </div>
+      </div>
 
-
-          
-        
-    </div>
+    <div>
   </div>
 
   <footer class="footer footer-default" style="color: black">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-              FOLLOW US  
-          </li>
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          <li>
-            <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
-          </li>
-          <li>
-            <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
-          </li>
-          <li>
-            <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
-          </li>
-        </ul>
-      </nav>
-
-      
-      <div class="copyright float-right">
+    <div class="center">
+      FOLLOW US
+    </div>
+    <div class="center">
+      <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
+      &ensp;
+      <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
+      &ensp;
+      <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
+    </div>
+    <div class="center">
+      <div class="copyright">
         &copy;
         <script>
           document.write(new Date().getFullYear())
@@ -383,7 +274,12 @@
       </div>
     </div>
   </footer>
+
 </body>
+
+
+
+
 
 <script type="text/javascript">
   var request = new XMLHttpRequest();
@@ -399,11 +295,5 @@
   request.send();
   </script>
 
-
-<script>
-    $(window).on("load",function(){
-      $(".loader-wrapper").fadeOut("slow");
-    });
-</script>
 
 </html>
