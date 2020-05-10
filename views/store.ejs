@@ -1,184 +1,157 @@
-<html >
+<html>
 <head>
   <title>chessclub.mit | Official chess club of MIT Manipal</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link rel = "icon" type = "image/png" href = "assets/img/logo.jpg">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="assets/css/material-kit.css"  />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <script src="assets/js/jquery-2.1.4.js"></script>
+  <script src="assets/js/jquery-2.1.4.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <style>
-     /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer
-} 
-      #chess-board-image{
-          float: left;
-          width: 100%;
-          height:100%;
-      }
-      * {box-sizing: border-box}
-body {
-    font-family: Verdana, sans-serif; margin:0;
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    .center {
+      margin: auto;
     }
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  background-color: #FFFFFF;
-}
-#purchase-form{
-    width:57%;
-    margin-left:25%;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #FFFFFF;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-
-/* The dots/bullets/indicators */
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards; 
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-     
-      
+    html{
+      font-family: 'Oxygen', sans-serif;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto;
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; 
+      padding: 20px;
+      border: 1px solid #888;
+      width: 50%; 
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer
+    } 
+    #chess-board-image{
+      float: left;
+      width: 100%;
+      height:100%;
+    }
+    * {box-sizing: border-box}
+    body {
+      font-family: Verdana, sans-serif; margin:0;
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      background-color: #FFFFFF;
+    }
+    #purchase-form{
+      width:57%;
+      margin-left:25%;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: #FFFFFF;
+    }
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards; 
+    }
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }   
   </style>           
 </head>
-<body style="font-family: 'Montserrat', sans-serif;background-color: white">
 
 
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
-    </div>
 
-<nav  class="navbar absolute-top navbar-expand-lg"  >
-  <div class="container">
-    <div class="navbar-translate">
-      <a style="color: #FB9821" class="navbar-brand" href="#">
-         <img src="assets/img/logo.jpg" width="40px" height="40px">
-      </a>
-      <span>
-        <a href="/" style="color: #FB9821">
-          #MakingtheRightMoves
+<body style="background-color: white">
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <nav  class="navbar absolute-top navbar-expand-lg"  >
+    <div class="container">
+      <div class="navbar-translate">
+        <a style="color: #FB9821" class="navbar-brand" href="#">
+          <img src="assets/img/logo.jpg" width="40px" height="40px">
         </a>
-      </span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
+        <span>
+          <a href="/" style="color: #FB9821">
+            #MakingtheRightMoves
+          </a>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        
-        
-        <li class="nav-item">
-          <a href="/news" class="nav-link" style="color:black ">
-            <i class="material-icons">live_tv</i> News
-          </a>
-        </li>
         <li class="nav-item">
           <a href="#" class="nav-link" style="color: black">
             <i class="material-icons">store_front</i> Store
@@ -189,53 +162,45 @@ img {vertical-align: middle;}
             <i class="material-icons">people</i> Members
           </a>
         </li>
-        
-        
-        
       </ul>
     </div>
-  </div>
-</nav>
-<br>
-
-<div class="row" style="margin-left: 39%;  font-weight: 100;">
-  <p style="font-size: 32px;"> The Store</p><br><br>
-</div><br><br>
-<div class=row id="pics">
-    <div class="col-md-6" style="right: 5%">
-        <div class="slideshow-container" style="width: 50%;">
-            
-            <div class="mySlides fade">
-              <img src="https://cdn3.volusion.com/artgw.hyvvw/v/vspfiles/photos/CB05554-4.jpg?v-cache=1565171767" style="width:100%; height: 100%;">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="https://images-na.ssl-images-amazon.com/images/I/41tZaCaIYpL._AC_SY400_.jpg" style="width:100%; height: 100%;">
-             
-            </div>
-            </div>
-            <br>
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot" ></span> 
-              
-              
-            </div>
-            
     </div>
-    <div class="col-md-6" style="right: 8%">
+  </nav>
+  <br>
+
+  <div class="row" style="margin-left: 39%;  font-weight: 100;">
+    <p style="font-size: 32px;"> The Store</p><br><br>
+  </div>
+  <br>
+  <br>
+  <div class=row id="pics">
+    <div class="col-md-6">
+      <div class="slideshow-container" style="height: 400;width: 300">           
+        <div class="mySlides fade">
+          <img height="400" width="300" src="https://cdn3.volusion.com/artgw.hyvvw/v/vspfiles/photos/CB05554-4.jpg?v-cache=1565171767">
+        </div>
+        <div class="mySlides fade">
+          <img height="400" width="300" src="https://images-na.ssl-images-amazon.com/images/I/41tZaCaIYpL._AC_SY400_.jpg" >
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot" ></span>   
+        </div>     
+      </div>
+    </div>
+    <div class="col-md-6">
       <div class="card" id="information-card">
         <div class="card-header">
           <h4 >Chess Boards and Pieces</h4>
           <p class="category" style="color: #FB9821;  font-size: 16px;">₹500.00</p>
         </div>
         <div class="card-body" style="font-size: 16px;">
-            <br>
-            <p>
-                Whats better than playing chess on a physical board ? Buy the tournament sized chess board from us today. Here are the features of it -
-            </p>
+          <br>
+          <p>
+            Whats better than playing chess on a physical board ? Buy the tournament sized chess board from us today. Here are the features of it -
+          </p>
           <ul>
-            
             <li>Available in green color</li>
             <li>Available in 45gm and 65gm pieces</li>
             <li>16 X 16 inches</li>
@@ -244,157 +209,111 @@ img {vertical-align: middle;}
         </div>
       </div>
     </div>
-    
-</div>
+  </div>   
 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times</span>
-    
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times</span>
       <div class="section text-center">
           <h3 style="color: #FB9821">Order Checkout</h3>
-        </div>
-  
-        <div class="row">
-          <div class="col-md-6">
-              <div class="card" style="left: 48%">
-  
-                  <div class="card-header card-header-icon card-header-danger" >
-                    <div class="card-title">
-                      <span><b>Fill in the form and our team will get back to you shortly</b></span>
-                    </div>
-                     
-                  </div>
-                  <div class="card-body" >
-                      <form>
-                          <div class="row">
-                              <input type="text" class="form-control" placeholder="Full Name">
-                            </div>
-                            <br/>
-                            <div class="row">
-                              <input type="text" class="form-control" placeholder="Whatsapp Number">
-                            </div>
-                            <br/>
-                            <div class="row">
-                              <input type="text" class="form-control" placeholder="Email">
-                            </div>
-                            <br/>
-                            <div class="row">
-                              <input type="text" class="form-control" placeholder="Quantity">
-                            </div>
-                            <br/>
-                            <div class="row">
-                            <button style="background-color: #FB9821" type="submit" class="btn btn-primary">Submit</button>
-                          </div>
-                        </form>
-                        
-                  </div>
-              </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" style="left: 48%">    
+            <div class="card-header card-header-icon card-header-danger" >
+              <div class="card-title">
+                <span><b>Fill in the form and our team will get back to you shortly</b></span>
+              </div>   
+            </div>
+            <div class="card-body" >
+              <form>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <br/>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Whatsapp Number">
+                </div>
+                <br/>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <br/>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Quantity">
+                </div>
+                <br/>
+                <div class="row">
+                  <button style="background-color: #FB9821" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
   </div>
-</div>
+  
+  <br>
+  <br>
 
-
-
-
-<br>
-<br>
-
-<footer class="footer footer-default" style="color: black">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="#">
-              FOLLOW US
-            </a>
-          </li>
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          &emsp;
-          <li>
-            <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
-          </li>
-          <li>
-            <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
-          </li>
-          <li>
-            <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright float-right">
+  <footer class="footer footer-default" style="color: black">
+    <div class="center">
+      FOLLOW US
+    </div>
+    <div class="center">
+      <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
+      &ensp;
+      <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
+      &ensp;
+      <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
+    </div>
+    <div class="center">
+      <div class="copyright">
         &copy;
         <script>
           document.write(new Date().getFullYear())
         </script>, made with <i class="material-icons">favorite</i> by
-        <a style="color: #FB9821" href="https://www.creative-tim.com/" target="blank">MIT CHESS CLUB</a>
+        <a style="color: #FB9821" href="http://localhost:3000" target="blank">MIT CHESS CLUB</a>
       </div>
     </div>
   </footer>
+
+
   <script>
-    var slideIndex = 0;
-showSlides();
+  var slideIndex = 0;
+  showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  };
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("buy-now");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.style.display = "block";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("buy-now");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+  span.onclick = function() {
     modal.style.display = "none";
   }
-} 
-    </script>
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  } 
+  </script>
 </body>
