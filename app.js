@@ -1,8 +1,5 @@
 const express = require("express");
 const app = express();
-const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('51e5a240dc9d4edb930cefab3548dc7c');
-console.log(typeof express)
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const _ = require("lodash");
@@ -12,14 +9,17 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.use(cookieParser());
-app.use(session({secret: "whydowefallsecretsymbole"}));
+app.use(session({secret: "whydowefallsecretsymbole",
+resave: true,
+saveUninitialized: true
+}));
 
 const mysql = require("mysql");
 const db_config = {
-  host:"" ,
-  user:"",
-  password:"" ,
-  database: ""
+  host:"eu-cdbr-west-03.cleardb.net" ,
+  user:"b77ba75b6753d1",
+  password:"f1c818a8" ,
+  database: "heroku_f22ea8e3a0f6d12"
 };
 
 var db;
@@ -37,8 +37,9 @@ function handleDisconnect(){
     console.log('db error', err);
     if(err.code === 'PROTOCOL_CONNECTION_LOST') { 
       handleDisconnect();                        
-    } else {                                     
-      console.log( err );                                  
+    } 
+    else {                                     
+      console.log(err);                                  
     }
   });
 }
@@ -53,9 +54,44 @@ app.get('/store', function(req, res){
   res.render('store');
 });
 
-app.post('/contact',function(req,res){
-  console.log(here);
-  res.render('home');
+app.post('/',function(req,res){
+  
+  var post = {
+    fname: req.body.fname,
+    lname: req.body.lname,
+    email: req.body.email,
+    message: req.body.message
+  };
+  var post1 = {
+    full_name: req.body.full_name,
+    reg_number: req.body.reg_no,
+    whatsapp_number:req.body.whatsapp
+  };
+
+  if(post.fname == null)
+    {
+      var sql = "INSERT INTO join_club SET ?";
+      db.query(sql, post1, function(err, results, fields) {
+      if (err){
+        console.log(err);
+      }
+      else{
+        res.redirect("/");
+      }
+      });
+    }
+  else
+    {
+      var sql = "INSERT INTO contact SET ?";
+      db.query(sql, post, function(err, results, fields) {
+      if (err){
+        console.log(err);
+      }
+      else{
+        res.redirect("/");
+      }
+      });
+    }
 })
 
 app.listen(PORT, function() {
