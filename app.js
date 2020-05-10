@@ -49,12 +49,8 @@ handleDisconnect();
 app.get('/', function(req, res){
     res.render('home');
  });
- 
-app.get('/store', function(req, res){
-  res.render('store');
-});
 
-app.post('/',function(req,res){
+ app.post('/',function(req,res){
   
   var post = {
     fname: req.body.fname,
@@ -93,6 +89,32 @@ app.post('/',function(req,res){
       });
     }
 })
+ 
+app.get('/store', function(req, res){
+  res.render('store');
+});
+
+app.post('/store', function(req, res){
+  var post = {
+    full_name: req.body.full_name,
+    whatsapp_number: req.body.whatsapp_num,
+    email: req.body.email,
+    quantity: req.body.quantity
+  };
+  var sql = "INSERT INTO store SET ?";
+  db.query(sql, post, function(err, results, fields) {
+  if (err){
+    console.log(err);
+  }
+  else{
+    res.render("store");
+  }
+  });
+
+
+
+
+});
 
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`)

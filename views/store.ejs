@@ -23,13 +23,14 @@
       display: none;
       position: fixed;
       z-index: 1;
-      left: 0;
-      top: 0;
+      left: 0%;
+      bottom: 0;
       width: 100%; 
-      height: 100%; 
+      height:100%; 
       overflow: auto;
       background-color: rgb(0,0,0); 
       background-color: rgba(0,0,0,0.4); 
+      overflow-y: hidden
     }
     .modal-content {
       background-color: #fefefe;
@@ -215,33 +216,33 @@
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times</span>
-      <div class="section text-center">
-          <h3 style="color: #FB9821">Order Checkout</h3>
-      </div>
+      </br>
+      </br>
+      </br>
       <div class="row">
-        <div class="col-md-6">
-          <div class="card" style="left: 48%">    
+        <div class="col-md-12">
+          <div class="card">    
             <div class="card-header card-header-icon card-header-danger" >
               <div class="card-title">
                 <span><b>Fill in the form and our team will get back to you shortly</b></span>
               </div>   
             </div>
             <div class="card-body" >
-              <form>
+              <form method="post" action="/store">
                 <div class="row">
-                  <input type="text" class="form-control" placeholder="Full Name">
+                  <input type="text" class="form-control" placeholder="Full Name" name="full_name">
                 </div>
                 <br/>
                 <div class="row">
-                  <input type="text" class="form-control" placeholder="Whatsapp Number">
+                  <input type="number" class="form-control" placeholder="Whatsapp Number" name="whatsapp_num">
                 </div>
                 <br/>
                 <div class="row">
-                  <input type="text" class="form-control" placeholder="Email">
+                  <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
                 <br/>
                 <div class="row">
-                  <input type="text" class="form-control" placeholder="Quantity">
+                  <input type="number" class="form-control" placeholder="Quantity" name="quantity"> 
                 </div>
                 <br/>
                 <div class="row">
@@ -299,7 +300,7 @@
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000);
   };
   var modal = document.getElementById("myModal");
   var btn = document.getElementById("buy-now");
