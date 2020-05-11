@@ -111,9 +111,10 @@ app.post('/store', function(req, res){
   }
   });
 
+});
 
-
-
+app.get('/members', function(req, res){
+  res.render('members');
 });
 
 app.listen(PORT, function() {
