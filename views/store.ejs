@@ -18,7 +18,49 @@
     }
     html{
       font-family: 'Oxygen', sans-serif;
+      overflow-x: hidden
     }
+
+    li
+      {
+        list-style-type: none;
+        margin-left: 0.1vw;
+      }
+
+      li:first-child
+      {
+        margin:0;
+      }
+
+      footer{
+        padding-top: 20;
+        padding-bottom: 20;
+      }
+
+      .copyright,  .impressum
+      {
+        text-align: center;
+      }
+
+      .logo
+      {
+        height: 8vh;
+      }
+
+      @media (max-width: 768px) 
+      {
+        li
+        {
+          margin-left: 0;
+          margin-bottom: 1vh;
+        }
+        
+        .sozial
+        {
+          margin-bottom: 1vh;
+        }
+      }
+
     .modal {
       display: none;
       position: fixed;
@@ -34,13 +76,16 @@
     }
     .modal-content {
       background-color: #fefefe;
-      margin: 15% auto; 
-      padding: 20px;
+      margin: 5% auto; 
+      padding-bottom: 70px;
       border: 1px solid #888;
       width: 50%; 
     }
     .close {
       color: #aaa;
+      padding-bottom: 20px;
+      padding-left: 5px;
+      padding-top: 5px;
       float: right;
       font-size: 28px;
       font-weight: bold;
@@ -130,6 +175,10 @@
 
 
 <body style="background-color: white">
+  
+    
+  
+  
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
@@ -168,9 +217,14 @@
     </div>
   </nav>
   <br>
+  <br>
+  <br>
+
+  <div class="main main-raised" style="background-color:white;padding-top: 5%">
+      <div class="container">
 
   <div class="row" style="margin-left: 39%;  font-weight: 100;">
-    <p style="font-size: 32px;"> The Store</p><br><br>
+    <h1 style="font-family: 'Righteous', cursive;color: #FB9821"> The Store</h1><br><br>
   </div>
   <br>
   <br>
@@ -259,28 +313,46 @@
   <br>
   <br>
 
-  <footer class="footer footer-default" style="color: black">
-    <div class="center">
-      FOLLOW US
-    </div>
-    <div class="center">
-      <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
-      &ensp;
-      <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
-      &ensp;
-      <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
-    </div>
-    <div class="center">
-      <div class="copyright">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a style="color: #FB9821" href="http://localhost:3000" target="blank">MIT CHESS CLUB</a>
-      </div>
-    </div>
-  </footer>
+  </div>
+  </div>
 
+</body>
+
+  <div class="container">
+      <footer class="row">
+        <span class="impressum col-xs-12 col-sm-3 col-sm-pull-6" style="padding-top: 15px">
+          <p>FOLLOW US @</p>
+        </span>
+        <div class="sozial col-xs-12 col-sm-6 col-sm-push-6" style="padding-left: 100px">
+          <ul class="row">
+            <li class="col-xs-6 col-sm-2">
+              <a href="#">
+                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-2">
+              <a href="#">
+                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-2">
+              <a href="#">
+                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-2">
+              <a href="#">
+                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_google_plus-128.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
+          <p> &copy; MIT Chess Club  </p>
+          <p>Made with <i class="material-icons">favorite</i> by <a href="http://localhost:3000">MIT CHESS CLUB</a></p>
+        </span>
+      </footer>
+    </div>
 
   <script>
   var slideIndex = 0;
@@ -317,4 +389,3 @@
     }
   } 
   </script>
-</body>

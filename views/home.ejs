@@ -1,6 +1,6 @@
 <html style="overflow-x: hidden;font-family: 'Oxygen', sans-serif;" >
   <head>
-    <title>chessclub.mit | Official chess club of MIT Manipal</title>
+    <title>chessclub.mit | Official Chess Club of MIT Manipal</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel = "icon" type = "image/png" href = "assets/img/logo.jpg">
@@ -12,9 +12,49 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="assets/js/jquery-2.1.4.js"></script>     
     <style>
-        .center {
-      margin: auto;
-    }
+      .center {
+        margin: auto;
+      }
+
+      li
+      {
+        list-style-type: none;
+        margin-left: 0.1vw;
+      }
+
+      li:first-child
+      {
+        margin:0;
+      }
+
+      footer{
+        padding-top: 20;
+        padding-bottom: 20;
+      }
+
+      .copyright,  .impressum
+      {
+        text-align: center;
+      }
+
+      .logo
+      {
+        height: 8vh;
+      }
+
+      @media (max-width: 768px) 
+      {
+        li
+        {
+          margin-left: 0;
+          margin-bottom: 1vh;
+        }
+        
+        .sozial
+        {
+          margin-bottom: 1vh;
+        }
+      }
     </style>
   </head>
 
@@ -80,7 +120,7 @@
           <div class="center">
             <div class="col-md-4">
               <div class="card" style="height: 25rem; width: 20rem;">
-                <img class="card-img-top" src="assets/img/trophy.png" rel="nofollow" alt="Card image cap" height="70%">
+                <img class="card-img-top" src="assets/img/champion_alt.png" rel="nofollow" alt="Card image cap" height="70%">
                 <div class="card-body">
                 <p style="color: black;text-align: center" class="card-text">After a success in 2019, MIT CHESS CHAMPIONSHIP is back in 2020. It's bigger and better than last time.</br><a href="" style="color:#FB9821"> Register here</a></p>
                 </div>
@@ -250,36 +290,45 @@
           </div>
         </div>
 
-      <div>
+      </div>
     </div>
-
-    <footer class="footer footer-default" style="color: black">
-      <div class="center">
-        FOLLOW US
-      </div>
-      <div class="center">
-        <a href="#" style="font-size: 30px" class="fa fa-facebook"></a>
-        &ensp;
-        <a href="#" style="font-size: 30px" class="fa fa-instagram"></a>
-        &ensp;
-        <a href="#" style="font-size: 30px" class="fa fa-linkedin"></a>
-      </div>
-      <div class="center">
-        <div class="copyright">
-          &copy;
-          <script>
-            document.write(new Date().getFullYear())
-          </script>, made with <i class="material-icons">favorite</i> by
-          <a style="color: #FB9821" href="http://localhost:3000" target="blank">MIT CHESS CLUB</a>
-        </div>
-      </div>
-    </footer>
-
   </body>
 
-
-
-
+  <div class="container">
+    <footer class="row">
+      <span class="impressum col-xs-12 col-sm-3 col-sm-pull-6" style="padding-top: 15px">
+        <p>FOLLOW US @</p>
+      </span>
+      <div class="sozial col-xs-12 col-sm-6 col-sm-push-6" style="padding-left: 100px">
+        <ul class="row">
+          <li class="col-xs-6 col-sm-2">
+            <a href="#">
+              <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+            </a>
+          </li>
+          <li class="col-xs-6 col-sm-2">
+            <a href="#">
+              <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+            </a>
+          </li>
+          <li class="col-xs-6 col-sm-2">
+            <a href="#">
+              <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+            </a>
+          </li>
+          <li class="col-xs-6 col-sm-2">
+            <a href="#">
+              <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_google_plus-128.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
+        <p> &copy; MIT Chess Club  </p>
+        <p>Made with <i class="material-icons">favorite</i> by <a href="http://localhost:3000">MIT CHESS CLUB</a></p>
+      </span>
+    </footer>
+  </div>
 
   <script type="text/javascript">
     var request = new XMLHttpRequest();
