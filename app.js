@@ -117,6 +117,10 @@ app.get('/members', function(req, res){
   res.render('members');
 });
 
+app.get('/4morechecks', function(req, res){
+  res.render('4morechecks');
+});
+
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`)
 });
