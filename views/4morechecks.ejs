@@ -5,6 +5,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <style>
     /*!
  * Responsive Tournament Bracket
@@ -63,8 +64,9 @@ html {
 
 
 body {
-  background-color: #b0bec5;
-  font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #36454f;
+  font-family: 'Titillium Web', sans-serif;
+font-style: normal;
 }
 .container {
   width: 90%;
@@ -116,7 +118,7 @@ h2 {
           flex: 1;
 }
 .tournament-bracket__round-title {
-  color: black;
+  color: white;
   font-size: 0.95rem;
   font-weight: 400;
   text-align: center;
@@ -534,9 +536,24 @@ h2 {
   padding: 0 0.5em;
 }
 
-a { color: inherit; } 
+a { color: inherit;text-decoration: underline } 
 
+h1 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #FFFFFF; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
 
+h1 span { 
+    background:#36454f; 
+    padding:0 10px; 
+}
+
+hov:hover{
+  
+}
 
     </style>
 </head>
@@ -546,7 +563,37 @@ a { color: inherit; }
 
 
 <div class="container">
-        <h1 style="font-family: 'Noto Sans KR', sans-serif;">4MoreChecks</h1>
+        
+        <div style="text-align: center"><img width="400" height="400" src="assets/img/logo_transparent.png"></div>
+        <h1 style="text-align: center;color: white;font-size: 50"><span>Platforms Used</span></h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="center">
+              <div class="col l6 s6">
+                
+                    <img width="400" height="100" src="assets/img/chesscom_logo_filled.png">
+                
+              </div>
+            </div>
+            <div class="center">
+              <div class="col l6 s6">
+                
+                    <span id="hov" style='font-size:80px;'>&#10068;&#10068;&#10068</span>
+                
+              </div>
+            </div>      
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 style="text-align: center;color: white;font-size: 50"><span>Road to Victory</span></h1>
+        
+        <br>
+        <br>
         <br>
         <br>
         <div class="tournament-bracket tournament-bracket--rounded">                                                     
@@ -835,6 +882,17 @@ a { color: inherit; }
       <br>
       <br>
 
+      <div class="container">
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 style="text-align: center;color: white;font-size: 50"><span>Teams</span></h1>
+          <br>
+          <br>
+          <br>
+          <br>
       
       <table style="background-color: white;color: white" class="responsive-table centered">
          
@@ -907,7 +965,7 @@ a { color: inherit; }
                                 </tbody>
          
           </table>
-          
+        </div>
 
 
 
